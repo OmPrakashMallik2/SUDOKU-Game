@@ -1,25 +1,46 @@
-.container {
-    background-color: red;
-    margin: 0 25%;
+:root {
+    --bg-body: #fff;
+    --color-txt: #000;
+    --filled-color: #000;
+    --filled-bg: #caf0f8;
+
+    --white: #fff;
+    --blue: #00aeef;
+    --red: #e91e63;
+    --black: #000;
+
+    --nav-size: 70px;
+    --soduko-cell-size: 50px;
+
+    --border-radious: 10px;
+
+    --space-y: 20px;
+
+    --gap: 5px;
+
+    --font-size: 1.5rem;
+    --font-size-lg: 2rem;
+    --font-size-xl: 3rem;
 }
 
-.game {
-    background-color: black;
+.dark {
+    --bg-main: #2a2a38;
+    --bg-body: #1a1a2e;
+    --color-txt: #6a6a6a;
+    --filled-color: #4f4f63;
+    --filled-bg: #000;
 }
 
-input {
-    background-color: rgb(50, 50, 50);
-    color: white;
-    cursor: pointer;
-    text-align: center;
+* {
+    padding: 0;
     margin: 0;
-    width: 177px;
-    height: 166px;
-    font-size: 120px;
-    outline: none;
-    border: 2px solid black;nnnnnnnnnnnnnm
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
-input:hover {
-    background-color: black;
+body {
+    height: 100vh;
+    background-color: var(--bg-body);
+    overflow-x: hidden;
+    user-select: none;
 }
