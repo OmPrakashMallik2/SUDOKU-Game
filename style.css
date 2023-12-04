@@ -39,8 +39,79 @@
 }
 
 body {
+    /* font type */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     height: 100vh;
     background-color: var(--bg-body);
     overflow-x: hidden;
     user-select: none;
+}
+
+input {
+    /* font type */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 2px solid var(--bg-main);
+    color: var(--color-txt);
+}
+
+input:hover,
+input:focus {
+    border-color: var(--blue);
+}
+
+a {
+    text-decoration: var(--blue);
+    color: unset;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: var(--bg-body);
+    color: var(--color-txt);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 5px 2px var(--bg-main);
+    z-index: 99;
+}
+
+.nav-container {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: var(--nav-size);
+}
+
+.nav-logo {
+    font-size: var(--font-size-lg);
+    color: var(--blue);
+    font-weight: bolder;
+}
+
+.dark-mode-toggle{
+    color: var(--blue);
+    font-size: var(--font-size-lg);
+    cursor: pointer;
+}
+
+.bxs-sun {
+    display: none;
+}
+
+.bxs-moon {
+    display: inline-block;
+}
+
+.dark .bxs-sun {
+    display: inline-block;
+}
+
+.dark .bxs-moon {
+    display: none;
 }
